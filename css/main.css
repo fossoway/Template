@@ -1,0 +1,142 @@
+.main {
+  text-align: center;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  text-transform: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 25px;
+}
+
+.main__subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.main__subtitle:after,
+.main__subtitle:before {
+  display: inline-block;
+  content: "";
+  background-image: url("../img/left.png");
+  width: 43px;
+  height: 2px;
+  margin: 5px 23px;
+}
+
+.main__text {
+  padding: 0 150px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.main__odds {
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--gap);
+  counter-reset: count 0;
+}
+
+.main__item {
+  flex-basis: 196px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.main__item:before {
+  display: block;
+  content: counter(count);
+  counter-increment: count;
+  font-weight: 500;
+  font-size: 57px;
+  color: var(--main-color);
+  width: 122px;
+  height: 122px;
+  background-color: var(--circle-color);
+  border-radius: 50%;
+  margin: 0 auto 16px auto;
+  padding-top: 20%;
+}
+
+@media (max-width: 1200px) {
+  .main__title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 23px;
+  }
+
+  .main__subtitle {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 33px;
+  }
+
+  .main__text {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .main__odds {
+    flex-wrap: wrap;
+  }
+
+  .main__item {
+    flex-basis: 180px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .main__item:before {
+    font-size: 52px;
+    line-height: 73px;
+    width: 104px;
+    height: 104px;
+    padding-top: 10%;
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 460px) {
+  .main__title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+
+  .main__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 26px;
+  }
+
+  .main__text {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0;
+  }
+
+  .main__subtitle:after,
+  .main__subtitle:before {
+    width: 20px;
+    height: 1px;
+  }
+
+  .main__odds {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .main__item {
+    flex-basis: 182px;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 55px;
+  }
+}

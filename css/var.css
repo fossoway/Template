@@ -1,0 +1,13 @@
+:root {
+  --main-color: #FFFFFF;
+  --main-text: #383A4C;
+  --link-color: #4A76A8;
+  --footer-background: #2F324B;
+  --circle-color: #23C7EC;
+  --button-color: #15A9CB;
+}
+
+main {
+  --cart-count: 4;
+  --gap: 50px;
+}
