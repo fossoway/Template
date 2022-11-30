@@ -129,14 +129,17 @@
   }
 
   .main__odds {
-    flex-direction: column;
-    gap: 40px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
   }
 
   .main__item {
-    flex-basis: 182px;
+    width: 290px;
     font-size: 18px;
     line-height: 25px;
-    padding: 0 55px;
+    padding: 0 85px;
+    scroll-snap-align: start;
   }
 }
