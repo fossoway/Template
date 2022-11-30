@@ -131,15 +131,28 @@
   .main__odds {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    overflow: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
+  }
+
+  .main__odds::-webkit-scrollbar {
+    border: 1px transparent;
+  }
+
+  .main__odds::-webkit-scrollbar-button:single-button {
+    background-color: #bbbbbb;
   }
 
   .main__item {
     width: 290px;
     font-size: 18px;
     line-height: 25px;
-    padding: 0 85px;
+    padding-left: 85px;
     scroll-snap-align: start;
+  }
+
+  .main__item:last-child {
+    padding-left: 80px;
+    padding-right: 85px;
   }
 }
