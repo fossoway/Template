@@ -1,5 +1,6 @@
 .main {
   text-align: center;
+  padding-top: 30px;
 }
 
 .main__title {
@@ -29,7 +30,7 @@
 }
 
 .main__text {
-  padding: 0 150px;
+  padding: 0 220px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -38,7 +39,8 @@
 
 .main__odds {
   display: flex;
-  justify-content: space-evenly;
+  padding: 0 135px;
+  justify-content: space-between;
   gap: var(--gap);
   counter-reset: count 0;
 }
@@ -61,8 +63,8 @@
   height: 122px;
   background-color: var(--circle-color);
   border-radius: 50%;
-  margin: 0 auto 16px auto;
-  padding-top: 20%;
+  margin: 10px auto 15px auto;
+  padding-top: 50px;
 }
 
 @media (max-width: 1200px) {
